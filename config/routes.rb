@@ -6,3 +6,5 @@ Rails.application.routes.draw do
   resources :tasks
 # ７つを、RESTfulなルーティングというらしい。
 end
+
+# GitHubへのプッシュのためテストで変更コメントしてます。
