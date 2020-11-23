@@ -41,7 +41,6 @@ class TasksController < ApplicationController
   end
 
   def destroy
-    set_task
     
     @task.destroy
     
