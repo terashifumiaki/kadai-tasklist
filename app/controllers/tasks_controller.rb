@@ -3,7 +3,7 @@ class TasksController < ApplicationController
   # コントローラー内のルーティングと同じ名前のメソッドとして定義する。
   
   def index
-    @tasks = Task.all
+    @tasks = Task.all.page(params[:page]).per(10)
   end
 
   def show
@@ -61,3 +61,4 @@ private
 def task_params
   params.require(:task).permit(:content, :status)
 end
+
