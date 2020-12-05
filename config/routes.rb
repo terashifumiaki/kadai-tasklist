@@ -16,6 +16,6 @@ Rails.application.routes.draw do
   resources :tasks
 # ７つを、RESTfulなルーティングというらしい。
 
-# 新規ユーザ登録のみ実装↓
+# 新規ユーザ登録のみ実装↓rails routes
   resources :users, only: [:new, :create]
 end
