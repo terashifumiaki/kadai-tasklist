@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # トップページ"/"と"/tasks"にアクセスしたときのルーティング
-  root to: 'tasks#index'
+  root to: 'toppages#index'
   
   # 8.3で実装↓ログイン等の処理はセッション管理用のコントローラ sessions に記述します
   # 追加した3行は、いずれも7つの基本アクションから外れていないので、 
