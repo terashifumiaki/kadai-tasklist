@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
-
+  before_action :require_user_logged_in, only: [:index, :show]
   # ユーザ登録用のフォーム設置部分↓コントローラと、もう一つはview
+  
   def new
     @user = User.new
   end
